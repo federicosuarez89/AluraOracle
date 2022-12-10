@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas width="600" height="400"></canvas>
+    <script>
+        function dibujarCuadradoVerde(x,y,color){
+            //Definimos las variables de la funcion
+            let pantalla = document.querySelector("canvas");
+            let pincel = pantalla.getContext("2d");
+            //Dibujamos un cuadrado
+        pincel.fillStyle = color;
+        pincel.fillRect(x,y,50,50);
+        pincel.strokeStyle = "black"; //pintamos los bordes del cuadrado
+        pincel.strokeRect(x,y,50,50);
+        }
+        dibujarCuadradoVerde(0,0,"red");
+        dibujarCuadradoVerde(0,50,"yellow");
+        dibujarCuadradoVerde(0,100,"green");
+        dibujarCuadradoVerde(0,150,"white");
+        dibujarCuadradoVerde(0,200,"black");
+        
+
+        
+
+        
+    </script>
+    
+</body>
+</html>
