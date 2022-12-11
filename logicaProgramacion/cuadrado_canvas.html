@@ -19,12 +19,13 @@
         pincel.strokeStyle = "black"; //pintamos los bordes del cuadrado
         pincel.strokeRect(x,y,50,50);
         }
-        dibujarCuadradoVerde(0,0,"red");
-        dibujarCuadradoVerde(0,50,"yellow");
-        dibujarCuadradoVerde(0,100,"green");
-        dibujarCuadradoVerde(0,150,"white");
-        dibujarCuadradoVerde(0,200,"black");
-        
+        let x = 0;
+        while(x<600){
+            dibujarCuadradoVerde(x,0,"red");
+            dibujarCuadradoVerde(x,50,"yellow");
+            dibujarCuadradoVerde(x,100,"green");
+            x+=50;
+        }
 
         
 
