@@ -21,8 +21,4 @@ function actualizarPantalla(){
     crearCirculo(x,20,10);
     x++;
 }
-for (let i = 20; i < 600; i++){
-   crearCirculo(i,20,20);
-}
-
 setInterval(actualizarPantalla,100);
