@@ -7,6 +7,14 @@ public class TestMetodos {
 		cuentaFederico.depositar(120.32);
 		System.out.println(cuentaFederico.saldo);
 		
+		cuentaFederico.retirar(100);
+		System.out.println(cuentaFederico.saldo);
+		
+		Metodos cuentaLeandro = new Metodos();
+		cuentaLeandro.depositar(1000);
+		cuentaLeandro.transferir(360, cuentaFederico);
+		System.out.println(cuentaFederico.saldo);
+		System.out.println(cuentaLeandro.saldo);
 	}
 
 }
