@@ -1,2 +1,2 @@
 # AluraOracle-Desarrollador Backend Java
-Variables.
+Variables. Tipos de datos int, double. Operadores aritméticos.
