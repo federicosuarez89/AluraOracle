@@ -12,6 +12,16 @@ public class TiposDatosNumericos {
 		
 		edad = 46 + 88;
 		System.out.println("Mi edad es :"+edad);
+	
+		double sueldo = 1250.30;
+		System.out.println("Mi sueldo es: $"+sueldo);
+		
+		double sueldo2 = 3332.23;
+		int castSueldo2 = (int)sueldo2;
+		System.out.println(castSueldo2);
+	
+	
+	
+	
 	}
-
 }
