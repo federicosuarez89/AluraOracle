@@ -1,7 +1,5 @@
 package tipos_datos;
 
-import java.awt.KeyEventDispatcher;
-
 public class TiposDatosNumericos {
 	public static void main(String[] args) {
 		int edad = 28;
@@ -19,9 +17,6 @@ public class TiposDatosNumericos {
 		double sueldo2 = 3332.23;
 		int castSueldo2 = (int)sueldo2;
 		System.out.println(castSueldo2);
-	
-	
-	
 	
 	}
 }
