@@ -7,6 +7,9 @@ public class Metodos {
 	private int numero;
 	private String titular;
 	
+	//Constructor de la clase
+	public Metodos() {} 
+	
 	//Metodo sin retorno
 	public void depositar(double saldo) {
 		this.saldo += saldo;
