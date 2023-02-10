@@ -1,4 +1,4 @@
-package poo;
+package poo.encapsulamiento;
 
 public class Metodos {
 	//Atributos de clase
