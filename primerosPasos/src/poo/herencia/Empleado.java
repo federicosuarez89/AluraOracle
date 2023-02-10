@@ -35,18 +35,17 @@ public class Empleado {
 	}
 
 	
-	//Metodo que establece los aumentos al personal
+	//Metodo que establece los aumentos a los empleados
 	public double setBonificacion(double bonificacion) {
 		double aumento = 1 + (bonificacion/100);
 		this.sueldo *= aumento;
 		return this.sueldo;
 	}
 	
-	//Metodo que retorna 
 	//ToString()
 	@Override
 	public String toString() {
-		return "Empleado [nombre=" + this.nombre + ", documento=" + this.documento + ", sueldo=" + this.sueldo + "]";
+		return "Empleado [nombre=" + this.nombre + ", documento=" + this.documento + ", sueldo=$" + this.sueldo + "]";
 	}
 	
 	
