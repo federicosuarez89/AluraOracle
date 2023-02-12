@@ -5,6 +5,8 @@ public class Empleado {
 	private String nombre;
 	private int documento;
 	private double sueldo;
+	private double bonificacion;
+	private double sueldoConAumento;
 	
 	//Metodo constructor
 	public Empleado() {}
@@ -27,27 +29,39 @@ public class Empleado {
 	}
 
 	public double getSueldo() {
-		return sueldo;
+		return this.sueldo;
 	}
 
 	public void setSueldo(double sueldo) {
 		this.sueldo = sueldo;
 	}
 
+	public void setBonificacion(double bonificacion) {
+		double aumento = bonificacion/100;
+		this.bonificacion = this.sueldo * aumento;
+	}
 	
+	public double getBonificacion() {
+		return this.bonificacion;
+	}
 	//Metodo que establece los aumentos a los empleados
-	public double setBonificacion(double bonificacion) {
-		double aumento = 1 + (bonificacion/100);
-		this.sueldo *= aumento;
-		return this.sueldo;
+	
+	  public void setSueldoConAumento(double bonificacion) { 
+		  double aumento = 1 + (bonificacion/100); 
+		  this.sueldoConAumento = this.sueldo * aumento; 
+	  }
+	 
+	
+	public double getSueldoConAumento() {
+		return this.sueldoConAumento;
+	}
+
+	@Override
+	public String toString() {
+		return "Empleado [nombre=" + this.nombre + ", documento=" + this.documento + ", sueldo base=$" + this.sueldo + ", sueldoConAumento=$"
+				+ this.getSueldoConAumento() + "]";
 	}
 	
 	//ToString()
-	@Override
-	public String toString() {
-		return "Empleado [nombre=" + this.nombre + ", documento=" + this.documento + ", sueldo=$" + this.sueldo + "]";
-	}
-	
-	
 	
 }
