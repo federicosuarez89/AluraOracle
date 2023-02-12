@@ -2,7 +2,7 @@ package poo.herencia;
 
 public class TestEmpleado {
 	public static void main(String[] args) {
-		Empleado empleado1 =  new Empleado();
+		Empleado empleado1 =  new Contador();
 		empleado1.setDocumento(34878787);
 		empleado1.setSueldo(1000);
 		empleado1.setNombre("Federico Leandro");

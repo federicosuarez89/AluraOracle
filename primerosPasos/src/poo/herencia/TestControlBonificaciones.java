@@ -2,7 +2,7 @@ package poo.herencia;
 
 public class TestControlBonificaciones {
 	public static void main(String[] args) {
-		Empleado empleado3 = new Empleado();
+		Empleado empleado3 = new Contador();
 		empleado3.setSueldo(2000);
 		empleado3.setBonificacion(10);
 		

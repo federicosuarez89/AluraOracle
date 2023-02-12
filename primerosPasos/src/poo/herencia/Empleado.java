@@ -1,6 +1,6 @@
 package poo.herencia;
 
-public class Empleado {
+public abstract class Empleado {
 	//Atributos de clase
 	private String nombre;
 	private int documento;
