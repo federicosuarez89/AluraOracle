@@ -1,8 +1,6 @@
 package poo.herencia;
 
-import poo.encapsulamiento.Metodos;
-
-public class Cuenta {
+public abstract class Cuenta {
 	private double saldo;
 	private Cliente titular = new Cliente();
 	private static int total = 1;
